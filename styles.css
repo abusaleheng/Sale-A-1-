@@ -23,9 +23,7 @@ nav .menu {
   list-style-type: none;
   gap: 32px;
   width: 365px;
-  justify-content: flex-start;
   font-weight: 500;
-  font-style: medium;
 }
 nav .menu a {
   font-size: 16px;
@@ -136,13 +134,12 @@ nav .menu a {
 #banner .banner-content p {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
-  font-weight: 400;
   line-height: 32px;
 }
 #notes {
   align-items: center;
   justify-content: center;
-  height: 448px;
+  height: 500px;
   margin: 0 auto;
   max-width: 1600px;
   background-color: #fafdfc;
@@ -167,13 +164,13 @@ nav .menu a {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  width: 1360px;
-  height: 300px;
+  height: 350px;
+  margin: 0 auto;
 }
-#notes .notes-container p {
+/*#notes .notes-container p { some issue
   font-size: 16px;
   font-weight: 400;
-}
+}*/
 #notes .notes-container .notes-box {
   display: flex;
   gap: 24px;
@@ -182,30 +179,78 @@ nav .menu a {
   background-color: rgba(255, 255, 255, 1);
   padding: 24px;
   text-align: center;
-  max-width: 322px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+  width: 1360px;
+  height: 300px;
 }
 .notes-card img {
   width: 60px;
   background-color: rgba(249, 85, 85, 1);
   border-radius: 100%;
-  margin-top: 40px;
+  padding: 14px;
 }
 .notes-card h3 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   color: var(--#001931, var(--Color, rgba(0, 25, 49, 1)));
   margin-top: 14px;
 }
+#notes .notes-container p,
+#brain-section .brain-content p,
 .notes-card p {
   font-size: 16px;
   line-height: 20px;
   color: #627382;
-  margin: 14px;
+  margin-top: 16px;
 }
-.brain-section {
+
+#brain-section {
+  max-width: 1360px;
+  height: 600px;
+  margin: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 60px;
+}
+.brain-image {
+  max-width: 600px;
+  border-radius: 12px;
+}
+#brain-section .section-title {
+  color: var(--#001931, var(--Color, rgba(0, 25, 49, 1))); /*some issue*/
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+}
+#brain-section .brain-content .top-solution {
+  /*some issue*/
+  font-size: 16px;
+  color: #308868;
+}
+.li-item ul {
+  margin-top: 40px;
+  gap: 16px;
+}
+.li-item li {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+  list-style-type: none;
+  color: var(--Style, rgba(0, 25, 49, 1));
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#ready-section {
+  background-color: rgba(247, 246, 242, 1);
+  text-align: center;
+  margin: 120px;
+  padding: 80px 40px 80px 40px;
+  border-radius: 12px;
+}
+#ready-section .section-container {
+  height: 200px;
 }
