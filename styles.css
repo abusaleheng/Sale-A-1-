@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /*shared style*/
-.font-open-sans {
+#font-open-sans {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
 }
@@ -167,10 +167,6 @@ nav .menu a {
   height: 350px;
   margin: 0 auto;
 }
-/*#notes .notes-container p { some issue
-  font-size: 16px;
-  font-weight: 400;
-}*/
 #notes .notes-container .notes-box {
   display: flex;
   gap: 24px;
@@ -198,7 +194,7 @@ nav .menu a {
 }
 #notes .notes-container p,
 #brain-section .brain-content p,
-.notes-card p {
+.notes-card p,.access-container p{
   font-size: 16px;
   line-height: 20px;
   color: #627382;
@@ -219,14 +215,13 @@ nav .menu a {
   border-radius: 12px;
 }
 #brain-section .section-title {
-  color: var(--#001931, var(--Color, rgba(0, 25, 49, 1))); /*some issue*/
+  color: var(--#001931, var(--Color, rgba(0, 25, 49, 1)));
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
   text-align: left;
 }
 #brain-section .brain-content .top-solution {
-  /*some issue*/
   font-size: 16px;
   color: #308868;
 }
@@ -245,12 +240,60 @@ nav .menu a {
   line-height: 20px;
 }
 #ready-section {
+  margin: 0 auto;
+  width: 1360px;
   background-color: rgba(247, 246, 242, 1);
   text-align: center;
-  margin: 120px;
   padding: 80px 40px 80px 40px;
   border-radius: 12px;
+  margin-bottom: 120px;
 }
-#ready-section .section-container {
-  height: 200px;
+.text-center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+.ready-p{
+  margin-top: 16px;
+  color: #627382;
+}
+.text-center img{
+  margin-left: 5px;
+}
+#footer-container{
+  width: 1600px;
+  padding: 120px 120px 30px 120px;
+  margin: 0 auto;
+  background-color: var(--Style, rgba(0, 25, 49, 1));;
+}
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  gap: 790px;
+}
+.social h4{
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 500;
+}
+.social img{
+  width: 20px;
+  margin-top: 10px;
+}
+.logo-footer img{
+width: 139px;
+}
+.custom-footer hr{
+  border: 1px solid var(--DS New/Colors/Stroke/Gray-Light, rgba(229, 231, 235, 1));
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+.custom-footer p{
+text-align: center;
+color: rgba(250, 250, 250, 1);
+font-size: 16px;
 }
